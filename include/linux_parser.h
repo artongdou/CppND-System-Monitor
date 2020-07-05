@@ -40,6 +40,14 @@ enum CPUStates {
   kGuest_,
   kGuestNice_
 };
+
+enum CPUTime {
+  kIdleTime_,
+  kActiveTime_,
+  kTotalTime_,
+  CntCPUTime
+};
+
 std::vector<std::string> CpuUtilization();
 long Jiffies();
 long ActiveJiffies();
